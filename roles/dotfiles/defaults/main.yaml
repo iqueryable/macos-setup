@@ -1,0 +1,13 @@
+---
+dotfiles_repo: "git@github.com:iqueryable/dotfiles.git"
+dotfiles_repo_version: master
+dotfiles_folder: "~/code/iqueryable/dotfiles"
+dotfiles_files:
+  - name: .gitconfig
+    path: ~/.gitconfig
+  - name: .p10k.zsh
+    path: ~/.p10k.zsh
+  - name: .zshrc
+    path: ~/.zshrc
+  - name: .vscode/settings.json
+    path: ~/Library/Application Support/Code/User/settings.json

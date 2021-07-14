@@ -1,0 +1,21 @@
+---
+homebrew_cask_apps:
+  - 1password
+  - docker
+  - dotnet-sdk
+  - google-chrome
+  - iterm2
+  - microsoft-teams
+  - royal-tsx
+  - slack
+  - visual-studio-code
+
+homebrew_installed_packages:
+  - csvkit
+  - dive
+  - grpcurl
+  - jq
+  - kubernetes-cli
+  - neofetch
+  - volta
+  - wget

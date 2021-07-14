@@ -1,0 +1,11 @@
+---
+
+- hosts: all
+  vars_files:
+    - default.config.yaml
+  roles:
+    - homebrew
+    - oh-my-zsh
+    - ssh-key
+    - dotfiles
+    - vscode-extensions

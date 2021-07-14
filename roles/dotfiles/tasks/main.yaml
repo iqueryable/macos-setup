@@ -1,0 +1,18 @@
+---
+- name: Ensure dotfiles repository is cloned locally.
+  git:
+    repo: "{{ dotfiles_repo }}"
+    dest: "{{ dotfiles_folder }}"
+    version: "{{ dotfiles_repo_version }}"
+    accept_hostkey: yes
+  become: false
+
+- name: link dotfiles
+  file:
+    src: "{{ dotfiles_folder }}/{{ item.name }}"
+    dest: "{{ item.path }}"
+    state: link
+    mode: 0644
+    force: yes
+  become: false
+  with_items: "{{ dotfiles_files }}"
