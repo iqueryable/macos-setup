@@ -1,4 +1,7 @@
 ---
+homebrew_taps:
+  - aws/tap
+
 homebrew_cask_apps:
   - 1password
   - docker
@@ -11,11 +14,17 @@ homebrew_cask_apps:
   - visual-studio-code
 
 homebrew_installed_packages:
+  - aws-sam-cli
+  - awscli
+  - azure-cli
   - csvkit
   - dive
+  - gh
   - grpcurl
+  - jinja2-cli
   - jq
   - kubernetes-cli
   - neofetch
+  - python@3.10
   - volta
   - wget
